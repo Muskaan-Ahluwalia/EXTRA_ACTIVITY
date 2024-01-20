@@ -1,0 +1,16 @@
+<h1>List of Trips</h1>
+<ul>
+  {{#each trips}}
+    <li>
+      {{!-- prettier-ignore --}}
+      {{this.[start station name]}}
+      to
+      {{!-- prettier-ignore --}}
+      {{this.[end station name]}}
+      - Duration:
+      {{this.tripduration}}
+      minutes
+     
+    </li>
+  {{/each}}
+</ul>

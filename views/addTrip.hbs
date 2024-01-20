@@ -1,0 +1,52 @@
+<h1>Add New Trip</h1>
+<form action="/api/trips" method="post">
+  <input
+    type="number"
+    name="tripduration"
+    placeholder="Trip Duration"
+    required
+  />
+  <input
+    type="number"
+    name="start station id"
+    placeholder="Start Station ID"
+    required
+  />
+  <input
+    type="text"
+    name="start station name"
+    placeholder="Start Station Name"
+    required
+  />
+  <input
+    type="number"
+    name="end station id"
+    placeholder="End Station ID"
+    required
+  />
+  <input
+    type="text"
+    name="end station name"
+    placeholder="End Station Name"
+    required
+  />
+  <input type="number" name="bikeid" placeholder="Bike ID" required />
+  <input type="text" name="usertype" placeholder="User Type" required />
+  <input type="number" name="birth year" placeholder="Birth Year" required />
+  <input type="number" name="gender" placeholder="Gender (0, 1, 2)" required />
+  <!-- Add fields for start/end station location if needed -->
+  <input
+    type="datetime-local"
+    name="start time"
+    placeholder="Start Time"
+    required
+  />
+  <input
+    type="datetime-local"
+    name="stop time"
+    placeholder="Stop Time"
+    required
+  />
+
+  <button type="submit">Add Trip</button>
+</form>

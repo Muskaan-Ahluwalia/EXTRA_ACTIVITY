@@ -1,0 +1,19 @@
+<h1>Trip Details</h1>
+{{!-- prettier-ignore --}}
+<p>Start Station: {{trip.[start station name]}}</p>
+{{!-- prettier-ignore --}}
+<p>End Station: {{trip.[end station name]}}</p>
+<p>Duration: {{trip.tripduration}} minutes</p>
+<p>User Type: {{trip.usertype}}</p>
+{{!-- prettier-ignore --}}
+<p>Birth Year: {{trip.[birth year]}}</p>
+
+
+<form action="/api/trips/{{trip._id}}" method="post">
+
+  <button type="submit">Update Trip</button>
+</form>
+
+<form action="/api/trips/{{trip._id}}" method="delete">
+  <button type="submit">Delete Trip</button>
+</form>
